@@ -1,34 +1,34 @@
 # Hostel 4 Website
 
-A motion-rich React + Vite web portal for Hostel 4 ("The Madhouse"), IIT Bombay. The site combines hostel storytelling, resident utilities, council information, notices, and gallery experiences into a single static-friendly frontend.
+This is the Hostel 4 ("The Madhouse") website that I designed and developed for IIT Bombay. I built it as a modern, motion-rich portal that brings together hostel identity, resident utilities, council information, notices, and gallery storytelling in one frontend experience.
 
-## Overview
+## About The Project
 
-This project is built as a multi-page single-page application using `HashRouter`, making it easy to host on static infrastructure or under a subdirectory. It includes animated transitions, theme persistence, interactive resident tools, and data-driven content for notices, amenities, bookings, and galleries.
+I wanted this website to feel like more than a basic hostel info page. My goal was to create something that captured the personality of Hostel 4 while still being genuinely useful for residents. The result is a React + Vite single-page application with animated transitions, theme support, interactive tools, and data-driven content across multiple sections.
 
-## Main Features
+## What I Built
 
-- Animated home page with opening sequence, notice ticker, quick links, and visual showcase sections
-- About page covering Hostel 4 history, ethos, reconstruction story, and curated gallery content
-- Dedicated gallery page with dome and tile layouts sourced from shared gallery data
-- Notice board with circular cards and full-notice modal views
-- Council directory with interactive member profiles and emergency helpline access
-- Utilities suite for maintenance links, LAN and Wi-Fi guides, mess schedule browsing, and equipment booking
-- Resident hub with an amenities and facilities explorer
-- Light and dark theme toggle with `localStorage` persistence
-- Mobile navigation drawer, command palette, and toast notifications
+- A cinematic home page with an opening sequence, live notice ticker, quick navigation, and visual Madhouse-themed sections
+- An about experience focused on Hostel 4 history, ethos, reconstruction, and legacy
+- A gallery page with multiple viewing modes powered by shared gallery data
+- A notice board with circular cards and full-detail modal views
+- A council page with interactive member profiles and emergency contact access
+- A utilities suite for maintenance support, LAN and Wi-Fi guides, mess browsing, and equipment booking
+- A resident hub with a facility and amenities explorer
+- Light and dark theme support with `localStorage` persistence
+- Mobile-friendly navigation, a command palette, and toast-based feedback interactions
 
 ## Routes
 
 - `/#/` - Home
 - `/#/about` - Hostel history and ethos
-- `/#/gallery` - Gallery experiences
+- `/#/gallery` - Gallery
 - `/#/notices` - Notice board
 - `/#/council` - Council and emergency contacts
 - `/#/utilities` - Resident utilities
 - `/#/hub` - Amenities hub
 
-## Tech Stack
+## Tech Stack I Used
 
 - React 19
 - Vite 8
@@ -74,58 +74,59 @@ src/
     ResidentHubPage.jsx
 ```
 
-## Getting Started
+## Running It Locally
 
 ### Prerequisites
 
 - Node.js 18 or newer
 - npm
 
-### Install
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-### Run the development server
+### Start the development server
 
 ```bash
 npm run dev
 ```
 
-Then open the local Vite URL shown in the terminal. Because the app uses `HashRouter`, navigation will appear under routes like `/#/about`.
+Then open the local Vite URL shown in the terminal. Since the app uses `HashRouter`, routes appear in the format `/#/about`.
 
 ## Available Scripts
 
 ```bash
 npm run dev      # start local development server
-npm run build    # create production build in dist/
+npm run build    # create the production build in dist/
 npm run preview  # preview the production build locally
 npm run lint     # run ESLint
 ```
 
-## Content Updates
+## Content And Customization
 
-- Update structured content in `src/data/` for notices, council members, gallery items, amenities, guides, equipment, and menus
-- Update page-specific UI in `src/pages/`
-- Update reusable sections and interactions in `src/components/`
-- Replace external image URLs if you want fully local or offline-ready assets
-- Review external form and sheet links in the utilities components before production use
+- Most editable site content lives in `src/data/`
+- Page-level layouts live in `src/pages/`
+- Reusable UI and interactions live in `src/components/`
+- Theme behavior is handled through `src/context/ThemeContext.jsx`
+- Several images currently use external URLs, so they can be swapped for local assets if needed
 
 ## Deployment Notes
 
-- The app uses `HashRouter`, so it works well on static hosting where server-side route rewriting is unavailable
-- `vite.config.js` sets `base: './'`, which helps when serving the build from a subdirectory
-- Production output is generated in `dist/`
-- For institute or shared hosting, upload the contents of `dist/`
+- I used `HashRouter`, which makes the site easy to deploy on static hosting without server-side route rewrites
+- `vite.config.js` uses `base: './'`, which helps when serving the build from a subdirectory
+- The production build is generated in `dist/`
 
 ## Implementation Notes
 
 - Theme preference is stored in `localStorage` under `h4_theme`
-- Equipment booking data is stored client-side in `localStorage` and is currently frontend-only
-- Several sections use browser APIs such as `navigator.clipboard` and `window.open`
-- The project currently has linting configured, but no automated test suite
+- Equipment booking data is currently stored client-side in `localStorage`
+- Some interactions rely on browser APIs like `navigator.clipboard` and `window.open`
+- The project currently includes linting, but no automated test suite
 
-## Credits
+## Author
 
-Designed and developed for Hostel 4, IIT Bombay. Current in-app credits attribute the site to Naitik Agarwal in collaboration with the Hostel 4 Council.
+Built by **Naitik Agarwal** for Hostel 4, IIT Bombay.
+
+If you're viewing this repository as part of my work, this project reflects my frontend development, UI thinking, component structuring, and interaction design for a real campus-focused website.
