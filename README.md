@@ -125,6 +125,22 @@ npm run lint     # run ESLint
 - Some interactions rely on browser APIs like `navigator.clipboard` and `window.open`
 - The project currently includes linting, but no automated test suite
 
+## Updating Content
+
+Most of the website content is stored in the `src/data/` folder, so future updates usually do not require changing the UI code.
+
+- Update council names, roles, phone numbers, emails, and room details in `src/data/councilData.js`
+- Update weekly mess menu items, timings, specials, and rules in `src/data/messMenuData.js`
+- Update notice board announcements in `src/data/noticesData.js`
+- Update gallery images, titles, and descriptions in `src/data/galleryData.js`
+- Update amenities and facility details in `src/data/amenitiesData.js`
+- Update LAN guides and hostel rules in `src/data/guidesData.js`
+- Update equipment and booking-related entries in `src/data/equipmentData.js`
+
+
+
+
+
 ## Author
 
 Built by **Naitik Agarwal** for Hostel 4, IIT Bombay.
