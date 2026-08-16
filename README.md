@@ -3,7 +3,7 @@
 This is the Hostel 4 ("The Madhouse") website that I designed and developed for IIT Bombay. I built it as a modern, motion-rich portal that brings together hostel identity, resident utilities, council information, notices, and gallery storytelling in one frontend experience.
 
 # Live Preview LINK
-[Website] (https://h4-website-omega.vercel.app/#/)
+[Website](https://h4-website-omega.vercel.app/#/)
 
 
 ## About The Project
